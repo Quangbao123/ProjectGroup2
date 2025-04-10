@@ -30,9 +30,6 @@ public class Menu_Interface extends JFrame {
 	                javax.swing.JOptionPane.showMessageDialog(null, "Lỗi: Vui lòng nhập số hợp lệ.");
 	            }
 	        });
-	}
-	
-	public void addEvents() {
 		 btnCong.addActionListener(e -> {
 	            try {
 	                String str1 = javax.swing.JOptionPane.showInputDialog("Nhập số thứ nhất:");
@@ -46,7 +43,6 @@ public class Menu_Interface extends JFrame {
 	            }
 	        });
 	}
-	
 	
 	public void addControl() {
 		Container cons = getContentPane();
