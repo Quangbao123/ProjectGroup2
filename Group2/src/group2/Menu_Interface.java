@@ -18,9 +18,6 @@ public class Menu_Interface extends JFrame {
 		addEvents();
 	}
 	public void addEvents() {
-		// them su kien tai day
-	}
-	public void addEvents() {
 		 btnNhan.addActionListener(e -> {
 	            try {
 	                String str1 = javax.swing.JOptionPane.showInputDialog("Nhập số thứ nhất:");
