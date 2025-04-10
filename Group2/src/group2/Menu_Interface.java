@@ -15,6 +15,10 @@ public class Menu_Interface extends JFrame {
 	public Menu_Interface(String title) {
 		this.setTitle(title);
 		addControl();
+		addEvents();
+	}
+	public void addEvents() {
+		
 	}
 	public void addControl() {
 		Container cons = getContentPane();
