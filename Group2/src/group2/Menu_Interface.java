@@ -66,20 +66,18 @@ public class Menu_Interface extends JFrame {
 	                javax.swing.JOptionPane.showMessageDialog(null, "Lỗi: Vui lòng nhập số hợp lệ.");
 	            }
 	        });
-	}
-	public void addEvents() {
-		btnChiaLayDu.addActionListener(e -> {
-            try {
-                String str1 = javax.swing.JOptionPane.showInputDialog("Nhập số thứ nhất:");
-                String str2 = javax.swing.JOptionPane.showInputDialog("Nhập số thứ hai:");
-                double a = Double.parseDouble(str1);
-                double b = Double.parseDouble(str2);
-                double result = a % b;
-                javax.swing.JOptionPane.showMessageDialog(null, "Kết quả: " + result);
-            } catch (Exception ex) {
-                javax.swing.JOptionPane.showMessageDialog(null, "Lỗi: Vui lòng nhập số hợp lệ.");
-            }
-        });
+		 btnChiaLayDu.addActionListener(e -> {
+	            try {
+	                String str1 = javax.swing.JOptionPane.showInputDialog("Nhập số thứ nhất:");
+	                String str2 = javax.swing.JOptionPane.showInputDialog("Nhập số thứ hai:");
+	                double a = Double.parseDouble(str1);
+	                double b = Double.parseDouble(str2);
+	                double result = a % b;
+	                javax.swing.JOptionPane.showMessageDialog(null, "Kết quả: " + result);
+	            } catch (Exception ex) {
+	                javax.swing.JOptionPane.showMessageDialog(null, "Lỗi: Vui lòng nhập số hợp lệ.");
+	            }
+	        });
 	}
 	public void addControl() {
 		Container cons = getContentPane();
